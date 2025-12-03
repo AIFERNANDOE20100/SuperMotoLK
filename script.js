@@ -44,7 +44,8 @@ function loadProducts(list) {
 
     container.innerHTML += `
       <div class="card">
-        <img src="${p.image}" />
+        <img src="${p.image}" onclick="openModal(this.src)" />
+
         
         <h3>${p.title}</h3>
         <p>${p.price}</p>
@@ -96,3 +97,12 @@ loadCSV();
 
 // Auto-refresh every 30 sec
 setInterval(loadCSV, 30000);
+// Modal functionality
+function openModal(imageUrl) {
+  document.getElementById("modalImage").src = imageUrl;
+  document.getElementById("imageModal").style.display = "flex";
+}
+
+function closeModal() {
+  document.getElementById("imageModal").style.display = "none";
+}
