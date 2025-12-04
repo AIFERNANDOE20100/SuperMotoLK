@@ -126,9 +126,31 @@ header {
 
 .close {
   position: absolute;
-  top: 20px;
+  top: 25px;
   right: 30px;
   font-size: 40px;
   color: white;
   cursor: pointer;
+}
+.site-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  padding: 10px;
+  font-size: 24px;
+  font-weight: bold;
+  background: black;
+  color: white;
+}
+
+.logo {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+}
+
+.site-title {
+  font-size: 24px;
+  font-weight: bold;
 }
