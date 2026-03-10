@@ -1,10 +1,12 @@
-﻿MotoZ â€“ Simple Ecommerce Site
+﻿MotoZ Simple Ecommerce Site
 -----------------------------------
 
 This website loads product data from Google Sheets.
 
 Google Sheet Columns:
-id | title | category | price | image | description | in_stock
+id | title | category | price | image | description | in_stock'
+
+Users can confirm their order through this site and send this to sellers whatsapp
 
 To enable:
 1. Open script.js
